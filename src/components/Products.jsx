@@ -23,7 +23,7 @@ function Products() {
 
   return (
     <div>
-        <h1 className='font-bold underline text-[20px] ml-24 mt-24 mb-10'>FEATURES PRODUCTS</h1>
+        <h1 className='font-thin text-3xl tracking-wider  ml-36 mt-24 mb-10'>FEATURES PRODUCTS</h1>
         <div className='flex flex-col gap-y-12'>
             <div className='grid grid-cols-4  gap-y-12 gap-x-12 mx-24 items-center'>
                 {

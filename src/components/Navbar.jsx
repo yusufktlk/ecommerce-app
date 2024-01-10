@@ -31,8 +31,9 @@ function Navbar() {
         <div style={{background: navbar, color: text}} className='text-black font-bold flex justify-between duration-500 w-full p-4 items-center text-2xl fixed z-50'>
             <div className='flex gap-x-10 items-center ml-20'>
                 <h1 className='text-4xl relative'>YuStore</h1>
-                <h2>Man</h2>
-                <h2>Woman</h2>
+                <h2 className='ml-12 text-xl'>Man</h2>
+                <h2 className='ml-10 text-xl'>Woman</h2>
+                <h2 className='ml-5 text-xl'>Other Stuffs</h2>
             </div>
 
             <div>
