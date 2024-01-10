@@ -23,16 +23,16 @@ function Products() {
 
   return (
     <div>
-        <h1 className='font-thin text-3xl tracking-wider  ml-36 mt-24 mb-10'>FEATURES PRODUCTS</h1>
-        <div className='flex flex-col gap-y-12'>
-            <div className='grid grid-cols-4  gap-y-12 gap-x-12 mx-24 items-center'>
+        <h1 className='font-thin text-2xl lg:text-3xl tracking-wider ml-4 lg:ml-36 mt-12 lg:mt-24 mb-10'>FEATURES PRODUCTS</h1>
+        <div className='flex flex-col lg:gap-y-12'>
+            <div className='grid grid-cols-2 lg:grid-cols-4 lg:gap-y-12 lg:gap-x-12 lg:mx-24 items-center'>
                 {
                     products.map((products,key) => (
                         <ProductCard key={key} products={products} />
                     ))
                 }
             </div>
-            <div className='grid grid-cols-4  gap-y-12 gap-x-12 mx-24 items-center'>
+            <div className='grid grid-cols-2 lg:grid-cols-4 lg:gap-y-12 lg:gap-x-12 lg:mx-24 items-center'>
                 {
                     womanProducts.map((products,key) => (
                         <ProductCard key={key} products={products} />

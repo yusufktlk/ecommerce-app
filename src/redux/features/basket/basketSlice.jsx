@@ -13,27 +13,22 @@ export const basketSlice = createSlice({
     addCart: (state, action) => {
       const productToAdd = action.payload.products;
 
-      // Ürün sepette var mı diye kontrol et
       const existingProductIndex = state.basket.findIndex(item => item.id === productToAdd.id);
 
       if (existingProductIndex !== -1) {
-        // Ürün sepette var, adeti artır
         state.basket[existingProductIndex].quantity += 1;
       } else {
-        // Ürün sepette yok, yeni öğe ekle
         state.basket.push({
           ...productToAdd,
           quantity: 1,
         });
       }
 
-      // Genel bilgileri güncelle
       state.totalQuantity += 1;
       state.totalPrice += productToAdd.price;
     },
 
     clearCart: (state) => {
-      // Sepeti temizle
       state.basket = [];
       state.totalQuantity = 0;
       state.totalPrice = 0;
